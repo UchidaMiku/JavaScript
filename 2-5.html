@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript2-5</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+ #box {
+  display: flex;
+  margin: 0px 50px;
+  width: 270px;
+  height: 150px;
+  background-color: #ddd;
+  cursor: pointer;
+  border: 0px;
+    
+  }
+#button {
+  width: 55px;
+  height: 25px;
+  margin: 50px 0px;
+  }
+#value {
+  width: 150px;
+  height: 15px;
+  margin: 50px 0px;
+  margin-left: 50px;
+
+  }
+  </style>
+  <script>
+$(function() {
+
+ $('#button').on('click', function() {
+  const value = $('#value').val();
+
+  if (value == '1') {
+        $('#box').css('background-color', 'red');
+  } else if (value =='2') {
+      $('#box').css('background-color', 'green');
+  }  else if (value =='3') {
+      $('#box').css('background-color', 'blue');
+  } else {
+   $('#box').css('background-color', '#ddd');
+  
+    
+ }
+
+});
+});
+
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>

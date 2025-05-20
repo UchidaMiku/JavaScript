@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript2-4</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+  <body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="result"></div>
+
+
+  
+<script>
+ $(function() {
+ $('#button').on('click', function() {
+ const value = $('#value').val();
+ alert(value);
+ $('#value').val('');
+
+});
+});
+  
+</script>
+
+
+
+</body>
+</html>
